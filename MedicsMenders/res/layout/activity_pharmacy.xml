@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PharmacyLayout"
+    android:text="@string/pharmacies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    
+    <Button
+        android:id="@+id/buttonPharmacy"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/newgradient"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="@string/listofpharmacies"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:typeface="serif" />
+    
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

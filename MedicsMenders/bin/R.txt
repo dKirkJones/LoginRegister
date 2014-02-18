@@ -257,8 +257,8 @@ int id action_legalnotices 0x7f05001c
 int id action_settings 0x7f05001a
 int id address 0x7f050012
 int id buttonHospital 0x7f050008
-int id buttonPharmacy 0x7f05000d
-int id buttonSearch 0x7f05000c
+int id buttonPharmacy 0x7f05000c
+int id buttonSearch 0x7f05000d
 int id header 0x7f050018
 int id hybrid 0x7f050004
 int id list 0x7f050005

@@ -446,8 +446,8 @@ containing a value of this type.
         public static final int action_settings=0x7f05001a;
         public static final int address=0x7f050012;
         public static final int buttonHospital=0x7f050008;
-        public static final int buttonPharmacy=0x7f05000d;
-        public static final int buttonSearch=0x7f05000c;
+        public static final int buttonPharmacy=0x7f05000c;
+        public static final int buttonSearch=0x7f05000d;
         public static final int header=0x7f050018;
         public static final int hybrid=0x7f050004;
         public static final int list=0x7f050005;

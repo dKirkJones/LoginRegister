@@ -105,30 +105,30 @@ public class PharmacyActivity extends FragmentActivity {
 	}
 	lv = (ListView) findViewById(R.id.list);
 	Button btnPharmacy = (Button) findViewById(R.id.buttonPharmacy);
-	double lat;
-	double lng;
-	lat = gps.getLatitude();
-	lng = gps.getLongitude();
-	MarkerOptions markerC = new MarkerOptions().position(new LatLng(lat,lng));
-	markerC.icon(BitmapDescriptorFactory.fromResource(R.drawable.greyhollowballoon96));
-	googleMap.addMarker(markerC);
-	CameraPosition cameraPosition = new CameraPosition.Builder().target(
-			new LatLng(lat,lng)).zoom(11).build();
-	googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-	googleMap.getUiSettings().setMyLocationButtonEnabled(false);
-	if (nearPlaces.results != null) {
-		for (Place place : nearPlaces.results) {
-			latitude = place.geometry.location.lat; 
-			longitude = place.geometry.location.lng;
-			MarkerOptions markerP = new MarkerOptions().position(new LatLng(latitude, longitude)).title(place.name + ", " + place.vicinity);
-			if (place.types.get(0).equals("pharmacy")) 
-			{
-				markerP.icon(BitmapDescriptorFactory.fromResource(R.drawable.rxblue2));
-				Marker marker = googleMap.addMarker(markerP);
-				referenceByMarker.put(marker, place.reference);
-			}
-		}
-	}
+	//double lat;
+	//double lng;
+	//lat = gps.getLatitude();
+	//lng = gps.getLongitude();
+	//MarkerOptions markerC = new MarkerOptions().position(new LatLng(lat,lng));
+	//markerC.icon(BitmapDescriptorFactory.fromResource(R.drawable.greyhollowballoon96));
+	//googleMap.addMarker(markerC);
+	//CameraPosition cameraPosition = new CameraPosition.Builder().target(
+			//new LatLng(lat,lng)).zoom(11).build();
+	//googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+	//googleMap.getUiSettings().setMyLocationButtonEnabled(false);
+	//if (nearPlaces.results != null) {
+		//for (Place place : nearPlaces.results) {
+			//latitude = place.geometry.location.lat; 
+			//longitude = place.geometry.location.lng;
+			//MarkerOptions markerP = new MarkerOptions().position(new LatLng(latitude, longitude)).title(place.name + ", " + place.vicinity);
+			//if (place.types.get(0).equals("pharmacy")) 
+			//{
+				//markerP.icon(BitmapDescriptorFactory.fromResource(R.drawable.rxblue2));
+				//Marker marker = googleMap.addMarker(markerP);
+				//referenceByMarker.put(marker, place.reference);
+			//}
+		//}
+	//}
 	btnPharmacy.setOnClickListener(new View.OnClickListener() {
 		@Override
 		public void onClick(View arg0) {

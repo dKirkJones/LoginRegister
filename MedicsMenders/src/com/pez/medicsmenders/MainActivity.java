@@ -158,7 +158,7 @@ public class MainActivity extends FragmentActivity {
         		googlePlaces = new GooglePlaces();
         		try {
         			String types = "hospital|pharmacy"; 
-        			double radius = 20000; 
+        			double radius = 8000; 
         			nearPlaces = googlePlaces.search(gps.getLatitude(),
         					gps.getLongitude(), radius, types);
         		} catch (Exception e) {

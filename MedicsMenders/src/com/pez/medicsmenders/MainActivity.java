@@ -222,7 +222,7 @@ public class MainActivity extends FragmentActivity {
                 	MarkerOptions markerC = new MarkerOptions().position(new LatLng(
                 			lat, lng));
                 	markerC.icon(BitmapDescriptorFactory
-                			.fromResource(R.drawable.greyhollowballoon));
+                			.fromResource(R.drawable.greyhollowballoon96));
                 	googleMap.addMarker(markerC);
                 	CameraPosition cameraPosition = new CameraPosition.Builder()
                 	.target(

@@ -20,7 +20,7 @@
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/newgradient"
+        android:background="@drawable/newgradientsmall"
         android:gravity="center"
         android:paddingLeft="15dp"
         android:text="@string/listofpharmacies"

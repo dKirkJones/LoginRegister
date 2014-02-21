@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:padding="10dip" >
 
-
     <TextView
         android:id="@+id/TextView1"
         android:layout_width="fill_parent"
@@ -17,7 +16,6 @@
         android:layout_marginTop="10dip"
         android:text="@string/name"
         android:textStyle="bold" />
-
 
     <TextView
         android:id="@+id/name"
@@ -37,16 +35,12 @@
         android:text="@string/address"
         android:textStyle="bold" />
 
-    <!-- Address Value -->
-
     <TextView
         android:id="@+id/address"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/TextView2" />
-
-    <!-- Phone Number Label -->
 
     <TextView
         android:id="@+id/phone"
@@ -55,8 +49,6 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/address"
         android:layout_marginTop="10dip" />
-
-    <!-- Location Value -->
 
     <TextView
         android:id="@+id/location"

@@ -17,19 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:weightSum="4"
-       
-           
-  
-             >
+        android:weightSum="4">
 
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            
-          >
+            android:layout_gravity="center_horizontal">
 
             <Button
                 android:id="@+id/buttonHospital"
@@ -66,9 +60,6 @@
                 android:textStyle="bold"
                 android:background="@drawable/newgradientsmall"
                 android:text="@string/search" />
-
-            
-
         </TableRow>
     </TableLayout>
  <ListView

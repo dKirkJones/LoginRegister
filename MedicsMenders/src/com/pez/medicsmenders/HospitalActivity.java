@@ -39,11 +39,8 @@ public class HospitalActivity extends FragmentActivity {
     GooglePlaces googlePlaces;
     PlacesList nearPlaces;
     GPSTracker gps;
- 
     Button btnList;
     Button btnHospital;
-    //Button btnPharmacy;
-    
     ProgressDialog pDialog;
     
     HashMap<Marker, String> referenceByMarker = new HashMap<Marker, String>();
@@ -103,34 +100,9 @@ public class HospitalActivity extends FragmentActivity {
     		return;
     	}
     	new LoadPlaces().execute();
-    	
     	lv = (ListView) findViewById(R.id.list);
     	Button btnHospital = (Button) findViewById(R.id.buttonHospital);
-    	//double lat;
-    	//double lng;
-    	//lat = gps.getLatitude();
-    	//lng = gps.getLongitude();
-
-    	//MarkerOptions markerC = new MarkerOptions().position(new LatLng(lat,lng));
-    	//markerC.icon(BitmapDescriptorFactory.fromResource(R.drawable.greyhollowballoon96));
-    	//googleMap.addMarker(markerC);
-    	//CameraPosition cameraPosition = new CameraPosition.Builder().target(
-    			//new LatLng(lat,lng)).zoom(13).build();
-    	//googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-    	//googleMap.getUiSettings().setMyLocationButtonEnabled(false);
-    	//if (nearPlaces.results != null) {
-    		//for (Place place : nearPlaces.results) {
-    			//latitude = place.geometry.location.lat; 
-    			//longitude = place.geometry.location.lng; 
-    			//MarkerOptions markerP = new MarkerOptions().position(new LatLng(latitude, longitude)).title(place.name + ", " + place.vicinity);
-    			//if (place.types.get(0).equals("hospital")) 
-    			//{
-    				//markerP.icon(BitmapDescriptorFactory.fromResource(R.drawable.hospital));
-    				//Marker marker = googleMap.addMarker(markerP);
-    				//referenceByMarker.put(marker, place.reference);
-    			//}
-    		//}
-    	//}
+    	
     	btnHospital.setOnClickListener(new View.OnClickListener() {
     		@Override
     		public void onClick(View arg0) {

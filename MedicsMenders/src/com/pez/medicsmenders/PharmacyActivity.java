@@ -103,6 +103,9 @@ public class PharmacyActivity extends FragmentActivity {
 				false);
 		return;
 	}
+	
+	new LoadPlaces().execute();
+	
 	lv = (ListView) findViewById(R.id.list);
 	Button btnPharmacy = (Button) findViewById(R.id.buttonPharmacy);
 	//double lat;

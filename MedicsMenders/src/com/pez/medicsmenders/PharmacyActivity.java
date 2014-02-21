@@ -210,7 +210,7 @@ public class PharmacyActivity extends FragmentActivity {
     		lat = gps.getLatitude();
     		lng = gps.getLongitude();
     		MarkerOptions markerC = new MarkerOptions().position(new LatLng(lat,lng));
-    		markerC.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_grey));
+    		markerC.icon(BitmapDescriptorFactory.fromResource(R.drawable.greyhollowballoon96));
     	    googleMap.addMarker(markerC);
     		CameraPosition cameraPosition = new CameraPosition.Builder().target(
     				new LatLng(lat,lng)).zoom(11).build();

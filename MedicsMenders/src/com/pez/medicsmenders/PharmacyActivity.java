@@ -39,11 +39,8 @@ public class PharmacyActivity extends FragmentActivity {
 	GooglePlaces googlePlaces;
 	PlacesList nearPlaces;
 	GPSTracker gps;
- 
     Button btnList;
-    //Button btnHospital;
     Button btnPharmacy;
-    
     ProgressDialog pDialog;
     
     HashMap<Marker, String> referenceByMarker = new HashMap<Marker, String>();
@@ -60,8 +57,7 @@ public class PharmacyActivity extends FragmentActivity {
     public static String KEY_REFERENCE = "reference"; 
     public static String KEY_NAME = "name"; 
     public static String KEY_VICINITY = "vicinity";
-    
-	
+  	
     ListAdapter adapter;
 	
     @Override
@@ -69,9 +65,9 @@ public class PharmacyActivity extends FragmentActivity {
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.activity_pharmacy);
     	referenceByMarker = new HashMap<Marker, String>();
-	cd = new ConnectionDetector(getApplicationContext());
-	Intent i = getIntent();
-	nearPlaces = (PlacesList) i.getSerializableExtra("near_places");
+    	cd = new ConnectionDetector(getApplicationContext());
+    	Intent i = getIntent();
+    	nearPlaces = (PlacesList) i.getSerializableExtra("near_places");
 	try {
 		initilizeMap();
 	} catch (Exception e) {
@@ -105,33 +101,9 @@ public class PharmacyActivity extends FragmentActivity {
 	}
 	
 	new LoadPlaces().execute();
-	
 	lv = (ListView) findViewById(R.id.list);
 	Button btnPharmacy = (Button) findViewById(R.id.buttonPharmacy);
-	//double lat;
-	//double lng;
-	//lat = gps.getLatitude();
-	//lng = gps.getLongitude();
-	//MarkerOptions markerC = new MarkerOptions().position(new LatLng(lat,lng));
-	//markerC.icon(BitmapDescriptorFactory.fromResource(R.drawable.greyhollowballoon96));
-	//googleMap.addMarker(markerC);
-	//CameraPosition cameraPosition = new CameraPosition.Builder().target(
-			//new LatLng(lat,lng)).zoom(11).build();
-	//googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-	//googleMap.getUiSettings().setMyLocationButtonEnabled(false);
-	//if (nearPlaces.results != null) {
-		//for (Place place : nearPlaces.results) {
-			//latitude = place.geometry.location.lat; 
-			//longitude = place.geometry.location.lng;
-			//MarkerOptions markerP = new MarkerOptions().position(new LatLng(latitude, longitude)).title(place.name + ", " + place.vicinity);
-			//if (place.types.get(0).equals("pharmacy")) 
-			//{
-				//markerP.icon(BitmapDescriptorFactory.fromResource(R.drawable.rxblue2));
-				//Marker marker = googleMap.addMarker(markerP);
-				//referenceByMarker.put(marker, place.reference);
-			//}
-		//}
-	//}
+	
 	btnPharmacy.setOnClickListener(new View.OnClickListener() {
 		@Override
 		public void onClick(View arg0) {
@@ -167,8 +139,8 @@ public class PharmacyActivity extends FragmentActivity {
     	protected String doInBackground(String... args) {
     		googlePlaces = new GooglePlaces();
     		try {
-    			String types = "pharmacy"; // Listing places only cafes, restaurants
-    			double radius = 9000; // 90000 meters 
+    			String types = "pharmacy";
+    			double radius = 25000; 
     			nearPlaces = googlePlaces.search(gps.getLatitude(),
     					gps.getLongitude(), radius, types);
     		} catch (Exception e) {

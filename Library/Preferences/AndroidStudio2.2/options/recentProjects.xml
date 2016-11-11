@@ -1,0 +1,79 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Desktop/DJProjects/LoginRegister" />
+        <option value="$USER_HOME$/Desktop/DJProjects/UserLogin" />
+        <option value="$USER_HOME$/Desktop/DJProjects/Iyaloja" />
+        <option value="$USER_HOME$/Desktop/DJProjects/TheFirstApp" />
+        <option value="$USER_HOME$/Desktop/DJProjects/delta-listviews" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Desktop/DJProjects/LoginRegister" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Desktop/DJProjects/LoginRegister" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Desktop/DJProjects/Iyaloja">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-145.3276617" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1478529714744" />
+              <option name="buildTimestamp" value="1473915600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/DJProjects/LoginRegister">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-145.3276617" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1478871698136" />
+              <option name="buildTimestamp" value="1473915600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/DJProjects/TheFirstApp">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-145.3276617" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1478373451419" />
+              <option name="buildTimestamp" value="1473915600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/DJProjects/UserLogin">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-145.3276617" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1478552006641" />
+              <option name="buildTimestamp" value="1473915600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/DJProjects/delta-listviews">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-145.3276617" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1476125523534" />
+              <option name="buildTimestamp" value="1473915600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/Desktop/DJProjects" />
+  </component>
+</application>
